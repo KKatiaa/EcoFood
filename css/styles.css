@@ -1,10 +1,13 @@
 * {
 	margin: 0;
 	padding: 0;
-
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+h2 {
+    width: 100%;
 }
 
 a {
@@ -21,7 +24,7 @@ body {
 	background-color :white;
 	margin: 50px 10%;
 	max-width: 2400px;
-	padding: 10px 40px;
+    padding: 60px 40px;
 }
 
 .button {
@@ -30,6 +33,7 @@ body {
     color: white;
     background: #91ac27;
     transition: all 0.5s;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -40,6 +44,7 @@ body {
 
 .link {
     color: black;
+    margin: 10px 0;
     transition: all 0.5s;
 }
 
@@ -48,7 +53,12 @@ body {
     transition: all 0.5s;
 }
 
-nav a {
+nav > .link {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav > a {
     border-bottom: 2px solid transparent;
     padding: 15px 5px;
     transition: all 0.5s;
@@ -57,4 +67,33 @@ nav a {
 nav a:hover {
     border-bottom: 2px solid #91ac27;
     transition: all 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header > section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header > a {
+    flex-grow: 4;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
