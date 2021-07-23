@@ -9,7 +9,7 @@ for (let i = 0; i < productsArr.length; i++) {
                     `<img src="${productsArr[i].imgUrl}" alt="${productsArr[i].name}" class="jsProductImg"/>` +
                     `<h3>${productsArr[i].name}</h3>` +
                     `<p class="my-15">$${productsArr[i].price.toFixed(2)}</p>` +
-                    `<button class="button button--wide">Add to cart</button>` +
+                    `<button class="button button--wide js-add-to-cart">Add to cart</button>` +
                 `</article>`;
 }
 

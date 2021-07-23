@@ -21,3 +21,27 @@ function productDetails(event)
     let product = event.target;
     window.location = 'product.html?productName=' + product.alt;
 }
+
+//-----------------------------scroll top 800------------------------
+let topBtn = document.getElementById('buttonTop');
+
+window.onscroll = function ()
+{
+    if (document.documentElement.scrollTop > 800)
+    {
+        topBtn.classList.add('show'); 
+    } else
+    {
+        topBtn.classList.remove('show');
+    }
+};
+
+topBtn.addEventListener('click', scrollToTop);
+
+function scrollToTop(event)
+{
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

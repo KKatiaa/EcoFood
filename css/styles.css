@@ -232,3 +232,51 @@ footer > section > article {
         display: none;
     }
 }
+
+#buttonTop {
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonTop:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#buttonTop:active {
+    background-color: #555;
+    color: white;
+}
+
+#buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    border-top: 1px solid #dee2e6;
+}
+
+td {
+    padding: .75rem;
+    vertical-align: top;
+}
